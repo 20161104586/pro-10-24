@@ -1,8 +1,9 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
       "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "8537749_105745297190_2.jpg",
       "scale" : "2x"
     },
     {
