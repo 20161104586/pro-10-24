@@ -215,6 +215,8 @@ class ViewController: UIViewController {
                 
                 re = 0
                 
+                add=1
+                
             }
             
         }
@@ -255,6 +257,8 @@ class ViewController: UIViewController {
                 number = 2
                 
                 re = 0
+                
+                add=1
                 
             }
             
@@ -298,6 +302,7 @@ class ViewController: UIViewController {
                 re = 0
                 
                 add = 1
+                
                 
             }
             
@@ -376,7 +381,7 @@ class ViewController: UIViewController {
         
         var c:Double
         
-                    let x = Double(result_1.text!)!
+        let x = Double(result_1.text!)!
         
         c = (result.text! as NSString).doubleValue
         
