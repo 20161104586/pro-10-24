@@ -130,11 +130,11 @@ class ViewController: UIViewController {
     @IBAction func number8(_ sender: Any) {
         if re == 1{
             
-            result.text = "8"
+            result.text = "7"
             
         }else{
             
-            result.text = result.text! + "8"
+            result.text = result.text! + "7"
             
         }
         
@@ -182,52 +182,20 @@ class ViewController: UIViewController {
     
     @IBAction func minus(_ sender: Any) {
         if add == 1{
-
-            var d:Double
             
-            var c:Double
+            let a = Double(result_1.text!)!
             
-            let x = Double(result_1.text!)!
+            let b = Double(result.text!)!
             
-            c = (result.text! as NSString).doubleValue
+            let c = a - b
             
-            if number == 1 {
-                
-                d = x - c
-                
-            }else if number == 2 {
-                
-                d = x + c
-                
-            }else if number == 3 {
-                
-                d = x * c
-                
-            }else if number == 4 {
-                
-                d = x / (c)
-                
-            }else {
-                
-                d = 1000
-                
-            }
+            result_1.text = String(c)
             
+            result.text = ""
             
-            if judge == 1{
-                
-                result_1.text = String(format:"%f", d)
-                
-            }else {
-                
-                result_1.text = String(format:"%.0f", d)
-                
-            }
+            number = 1
             
             re = 1
-            number = 1
-            judge = 0
-            
             
         }else{
             
@@ -258,51 +226,19 @@ class ViewController: UIViewController {
     @IBAction func plus(_ sender: Any) {
         if add == 1{
             
-            var d:Double
+            let a = Double(result_1.text!)!
             
-            var c:Double
+            let b = Double(result.text!)!
             
-            let x = Double(result_1.text!)!
+            let c = a + b
             
-            c = (result.text! as NSString).doubleValue
+            result_1.text = String(c)
             
-            if number == 1 {
-                
-                d = x - c
-                
-            }else if number == 2 {
-                
-                d = x + c
-                
-            }else if number == 3 {
-                
-                d = x * c
-                
-            }else if number == 4 {
-                
-                d = x / (c)
-                
-            }else {
-                
-                d = 1000
-                
-            }
+            result.text = ""
             
-            
-            if judge == 1{
-                
-                result_1.text = String(format:"%f", d)
-                
-            }else {
-                
-                result_1.text = String(format:"%.0f", d)
-                
-            }
+            number = 2
             
             re = 1
-            number = 2
-            judge = 0
-            
             
         }else{
             
@@ -333,51 +269,19 @@ class ViewController: UIViewController {
     @IBAction func multiply(_ sender: Any) {
         if add == 1{
             
-            var d:Double
+            let a = Double(result_1.text!)!
             
-            var c:Double
+            let b = Double(result.text!)!
             
-            let x = Double(result_1.text!)!
+            let c = a * b
             
-            c = (result.text! as NSString).doubleValue
+            result_1.text = String(c)
             
-            if number == 1 {
-                
-                d = x - c
-                
-            }else if number == 2 {
-                
-                d = x + c
-                
-            }else if number == 3 {
-                
-                d = x * c
-                
-            }else if number == 4 {
-                
-                d = x / (c)
-                
-            }else {
-                
-                d = 1000
-                
-            }
+            result.text = ""
             
-            
-            if judge == 1{
-                
-                result_1.text = String(format:"%f", d)
-                
-            }else {
-                
-                result_1.text = String(format:"%.0f", d)
-                
-            }
+            number = 3
             
             re = 1
-            number = 3
-            judge = 0
-            
             
         }else{
             
@@ -409,51 +313,20 @@ class ViewController: UIViewController {
     
     @IBAction func divide(_ sender: Any) {
         if add == 1{
-            var d:Double
             
-            var c:Double
+            let a = Double(result_1.text!)!
             
-            let x = Double(result_1.text!)!
+            let b = Double(result.text!)!
             
-            c = (result.text! as NSString).doubleValue
+            let c = a / b
             
-            if number == 1 {
-                
-                d = x - c
-                
-            }else if number == 2 {
-                
-                d = x + c
-                
-            }else if number == 3 {
-                
-                d = x * c
-                
-            }else if number == 4 {
-                
-                d = x / (c)
-                
-            }else {
-                
-                d = 1000
-                
-            }
+            result_1.text = String(c)
             
+            result.text = ""
             
-            if judge == 1{
-                
-                result_1.text = String(format:"%f", d)
-                
-            }else {
-                
-                result_1.text = String(format:"%.0f", d)
-                
-            }
+            number = 4
             
             re = 1
-            number = 4
-            judge = 0
-            
             
         }else{
             
